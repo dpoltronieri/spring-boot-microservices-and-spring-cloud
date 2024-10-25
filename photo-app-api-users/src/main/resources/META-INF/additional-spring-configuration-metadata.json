@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "gateway.ip",
+    "type": "java.lang.String",
+    "description": "IP of the Spring Gateway, used by security"
+  },
+  {
+    "name": "token.secret",
+    "type": "java.lang.String",
+    "description": "Secret token fo JWT"
+  },
+  {
+    "name": "token.expiration_time",
+    "type": "java.lang.String",
+    "description": "Expiration, 1 hour, in milis"
+  }
+]}

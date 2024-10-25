@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PhotoAppDiscoveryServiceApplication<photo-app-discovery-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dpoltronieri.photoapp.discovery.photo_app_discovery_service.PhotoAppDiscoveryServiceApplication",
+            "projectName": "photo-app-discovery-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PhotoAppGatewayApplication<photo-app-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dpoltronieri.photoapp.api.gateway.photo_app_gateway.PhotoAppGatewayApplication",
+            "projectName": "photo-app-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PhotoAppConfigServerApplication<photo-app-config-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dpoltronieri.photoapp.api.photo_app_config_server.PhotoAppConfigServerApplication",
+            "projectName": "photo-app-config-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PhotoAppApiUsersApplication<photo-app-api-users>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dpoltronieri.photoapp.api.users.photo_app_api_users.PhotoAppApiUsersApplication",
+            "projectName": "photo-app-api-users",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -23,25 +23,22 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
 - Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-- Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+- Você leu `<guia / link / documentação_relacionada_ao_projeto>`. -->
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalação
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+Buscar o IP da máquina atual, muda sempre que o container é montado novamente:
 
-Linux e macOS:
-
+```bash
+ifconfig # Copiar o IP inet da rede eth0
 ```
-<comando_de_instalação>
-```
+Substituir o valor da propriedade gateway.ip nos arquivos:
 
-Windows:
+- photo-app-api-users/src/main/resources/application.properties
+- PhotoAppConfiguration/application.properties
 
-```
-<comando_de_instalação>
-```
 
-## ☕ Usando <nome_do_projeto>
+<!-- ## ☕ Usando <nome_do_projeto>
 
 Para usar <nome_do_projeto>, siga estas etapas:
 

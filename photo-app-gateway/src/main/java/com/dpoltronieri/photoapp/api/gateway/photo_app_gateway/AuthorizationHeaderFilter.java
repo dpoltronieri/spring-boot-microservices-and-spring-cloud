@@ -44,7 +44,7 @@ public class AuthorizationHeaderFilter extends AbstractGatewayFilterFactory<Auth
 				return onError(exchange, "No authorization header", HttpStatus.UNAUTHORIZED);
 			}
 
-			// @SuppressWarnings("null")
+			@SuppressWarnings("null")
             String authorizationHeader = request.getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
 			String jwt = authorizationHeader.replace("Bearer", "").trim();
 
@@ -69,7 +69,7 @@ public class AuthorizationHeaderFilter extends AbstractGatewayFilterFactory<Auth
 		String subject = null;
  
 		try {
-            // @SuppressWarnings("null")
+            @SuppressWarnings("null")
             byte[] secretKeyBytes = Base64.getEncoder().encode(env.getProperty("token.secret").getBytes());
             SecretKey key = Keys.hmacShaKeyFor(secretKeyBytes);
 			JwtParser parser = Jwts.parser()

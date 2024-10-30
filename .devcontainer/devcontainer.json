@@ -5,21 +5,24 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	// Give executable to network.sh and run it
+	"postCreateCommand": "chmod +x .devcontainer/network.sh && bash .devcontainer/network.sh",
+	// "postCreateCommand": "pwd",
 	"features": {
-		"ghcr.io/itsmechlark/features/rabbitmq-server:1": {
-			"version": "latest"
-		},
+		// "ghcr.io/itsmechlark/features/rabbitmq-server:1": {
+		// 	"version": "latest"
+		//},
 		"ghcr.io/devcontainers-extra/features/mysql-homebrew:1": {
 			"version": "latest"
 		}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or with the host.
-	// "forwardPorts": [5432],
+	// "forwardPorts": [5432,5672,15672]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "java -version",

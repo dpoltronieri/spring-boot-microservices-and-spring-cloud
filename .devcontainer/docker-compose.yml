@@ -41,7 +41,7 @@ services:
   rabbitmq:
     image: rabbitmq:3-management
     ports:
-      - "5672:5672"  # Expose RabbitMQ port for external access (if needed)
+      # - "5672:5672"  # Expose RabbitMQ port for external access (if needed)
       - "15672:15672"  # Expose RabbitMQ management UI port
     volumes:
       - rabbitmq-data:/var/lib/rabbitmq

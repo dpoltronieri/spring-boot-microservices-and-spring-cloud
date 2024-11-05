@@ -87,12 +87,6 @@
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
 			<version>4.1.4</version>
 		</dependency>
-				<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-			<version>3.3.5</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bus-amqp -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
